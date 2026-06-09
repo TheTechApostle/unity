@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unity Tech Hub — Empowering Learning, Enhancing Futures</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     NAVBAR
+═══════════════════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top uth-nav" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand uth-brand" href="#">
+      <span class="brand-unity">UNITY</span><span class="brand-tech"> TECH HUB</span>
+    </a>
+    <button class="navbar-toggler uth-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link uth-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link uth-link" href="#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link uth-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link uth-link" href="#why">Why Us</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn uth-btn-gold px-3 py-2" href="#contact">
+            <i class="bi bi-telephone-fill me-1"></i> Get in Touch
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════
+     HERO
+═══════════════════════════════ -->
+<section class="uth-hero d-flex align-items-center" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-grid-texture"></div>
+
+  <div class="container position-relative z-2">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6" data-anim="fade-right">
+        <span class="uth-eyebrow mb-3 d-inline-block">
+          <i class="bi bi-hexagon-fill me-2 text-gold"></i>A Place Where Technology &amp; Academics Meet
+        </span>
+        <h1 class="uth-hero-title">
+          <span class="d-block text-white">UNITY</span>
+          <span class="d-block text-gold">TECH HUB</span>
+        </h1>
+        <p class="uth-hero-sub mt-3 mb-4">Empowering Learning, Enhancing Futures.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#services" class="btn uth-btn-gold px-4 py-3">
+            <i class="bi bi-grid-fill me-2"></i>Our Services
+          </a>
+          <a href="#contact" class="btn uth-btn-outline px-4 py-3">
+            <i class="bi bi-arrow-right-circle me-2"></i>Contact Us
+          </a>
+        </div>
+        <!-- Stats row -->
+        <div class="hero-stats d-flex gap-4 mt-5 flex-wrap">
+          <div class="hero-stat">
+            <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Services</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Satisfaction</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Tech Courses</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-anim="fade-left">
+        <div class="hero-img-stack">
+          <div class="himg himg-main">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=720&q=80" alt="Tech learning environment" loading="eager"/>
+          </div>
+          <div class="himg himg-float himg-float-1">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=320&q=80" alt="Students printing"/>
+          </div>
+          <div class="himg himg-float himg-float-2">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=320&q=80" alt="Tech courses"/>
+          </div>
+          <div class="hero-badge-float">
+            <i class="bi bi-shield-fill-check text-gold fs-4"></i>
+            <span>Quality<br/>Guaranteed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#services" class="scroll-down-btn">
+    <i class="bi bi-chevron-compact-down"></i>
+  </a>
+</section>
+
+
+<!-- ═══════════════════════════════
+     SERVICES
+═══════════════════════════════ -->
+<section class="uth-section bg-offwhite" id="services">
+  <div class="container">
+    <div class="section-header text-center mb-5" data-anim="fade-up">
+      <span class="uth-eyebrow-dark"><i class="bi bi-stars me-2"></i>What We Offer</span>
+      <h2 class="uth-section-title mt-2">Our Services</h2>
+      <div class="title-line mx-auto"></div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- CAFÉ & PRINTING -->
+      <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="0">
+        <div class="srv-card h-100">
+          <div class="srv-img-wrap">
+            <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?w=600&q=80" alt="Printing services" class="srv-img"/>
+            <div class="srv-img-overlay">
+              <i class="bi bi-printer-fill"></i>
+            </div>
+            <div class="srv-img-tag">Café &amp; Printing</div>
+          </div>
+          <div class="srv-body">
+            <h3 class="srv-title"><i class="bi bi-printer me-2 text-gold"></i>Café &amp; Printing Services</h3>
+            <ul class="srv-list">
+              <li><i class="bi bi-check2"></i> DIY Printing (A3, Flyers, Book Covers, Jotter Covers)</li>
+              <li><i class="bi bi-check2"></i> Photocopying &amp; Scanning</li>
+              <li><i class="bi bi-check2"></i> Binding &amp; Laminating</li>
+              <li><i class="bi bi-check2"></i> Passport Photos</li>
+              <li><i class="bi bi-check2"></i> All Online Registration &amp; Bill Payment Services</li>
+            </ul>
+            <div class="srv-bonus">
+              <i class="bi bi-controller fs-4"></i>
+              <div>
+                <strong>FREE PS4 GAMES</strong>
+                <span>Complimentary for all customers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESEARCH & DOCUMENT -->
+      <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="120">
+        <div class="srv-card srv-card--featured h-100">
+          <div class="srv-img-wrap">
+            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80" alt="Research and documents" class="srv-img"/>
+            <div class="srv-img-overlay">
+              <i class="bi bi-file-earmark-text-fill"></i>
+            </div>
+            <div class="srv-img-tag">Research &amp; Docs</div>
+          </div>
+          <div class="srv-body">
+            <h3 class="srv-title"><i class="bi bi-file-earmark-text me-2 text-gold"></i>Research &amp; Document Services</h3>
+            <ul class="srv-list">
+              <li><i class="bi bi-check2"></i> Research Writing (Articles &amp; Non-thesis)</li>
+              <li><i class="bi bi-check2"></i> Content Writing</li>
+              <li><i class="bi bi-check2"></i> Data Analysis — SPSS, Excel, AMOS, STATA, NVivo</li>
+              <li><i class="bi bi-check2"></i> CBT &amp; Full E-Learning App for Secondary Schools</li>
+              <li><i class="bi bi-check2"></i> Personal Coaching (Academics / Students)</li>
+            </ul>
+            <div class="quality-seal">
+              <i class="bi bi-patch-check-fill me-2"></i> Quality Service Guaranteed
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TECH COURSES -->
+      <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="240" id="courses">
+        <div class="srv-card h-100">
+          <div class="srv-img-wrap">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80" alt="Tech courses" class="srv-img"/>
+            <div class="srv-img-overlay">
+              <i class="bi bi-laptop-fill"></i>
+            </div>
+            <div class="srv-img-tag">Tech Courses</div>
+          </div>
+          <div class="srv-body">
+            <h3 class="srv-title"><i class="bi bi-laptop me-2 text-gold"></i>Tech Courses &amp; ICT Solutions</h3>
+            <ul class="srv-list">
+              <li><i class="bi bi-check2"></i> AI Tech Courses (AI Engineering &amp; Automation)</li>
+              <li><i class="bi bi-check2"></i> Data Analysis</li>
+              <li><i class="bi bi-check2"></i> Data Science</li>
+              <li><i class="bi bi-check2"></i> Web Development</li>
+              <li><i class="bi bi-check2"></i> Cyber Security Management</li>
+            </ul>
+            <div class="srv-bonus srv-bonus--purple">
+              <i class="bi bi-person-check-fill fs-4"></i>
+              <div>
+                <strong>Skilled Coaches</strong>
+                <span>&amp; Experienced Assessors</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     PHOTO GALLERY
+═══════════════════════════════ -->
+<section class="uth-section bg-navy" id="gallery">
+  <div class="container">
+    <div class="section-header text-center mb-5" data-anim="fade-up">
+      <span class="uth-eyebrow"><i class="bi bi-images me-2"></i>Our Space</span>
+      <h2 class="uth-section-title text-white mt-2">See Us in Action</h2>
+      <div class="title-line mx-auto"></div>
+    </div>
+
+    <div class="gallery-grid" data-anim="fade-up">
+      <div class="gal-item gal-item--tall" data-caption="Modern Learning Environment">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Modern office and learning space"/>
+        <div class="gal-caption"><i class="bi bi-building me-2"></i>Modern Learning Environment</div>
+      </div>
+      <div class="gal-item" data-caption="Tech Training Sessions">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Students in tech class"/>
+        <div class="gal-caption"><i class="bi bi-people me-2"></i>Tech Training Sessions</div>
+      </div>
+      <div class="gal-item" data-caption="Data Analysis Lab">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Data analysis on screens"/>
+        <div class="gal-caption"><i class="bi bi-bar-chart me-2"></i>Data Analysis Lab</div>
+      </div>
+      <div class="gal-item" data-caption="Printing & Document Services">
+        <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=600&q=80" alt="Printing services"/>
+        <div class="gal-caption"><i class="bi bi-printer me-2"></i>Printing &amp; Document Services</div>
+      </div>
+      <div class="gal-item gal-item--wide" data-caption="AI & Web Dev Courses">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80" alt="Coding and web development"/>
+        <div class="gal-caption"><i class="bi bi-code-slash me-2"></i>AI &amp; Web Development Courses</div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="uth-lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose"><i class="bi bi-x-lg"></i></button>
+      <button class="lb-prev" id="lbPrev"><i class="bi bi-chevron-left"></i></button>
+      <button class="lb-next" id="lbNext"><i class="bi bi-chevron-right"></i></button>
+      <div class="lb-img-wrap">
+        <img id="lbImg" src="" alt=""/>
+        <p id="lbCaption"></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     WHY US
+═══════════════════════════════ -->
+<section class="uth-section bg-offwhite" id="why">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5" data-anim="fade-right">
+        <span class="uth-eyebrow-dark"><i class="bi bi-award me-2"></i>Why Choose Us</span>
+        <h2 class="uth-section-title mt-2">Built for Learners.<br/>Backed by Quality.</h2>
+        <div class="title-line"></div>
+        <p class="mt-4 text-muted lh-lg">At Unity Tech Hub, we combine a warm learning environment with professional-grade services — all under one roof in the heart of Ilorin.</p>
+        <a href="#contact" class="btn uth-btn-gold mt-4 px-4 py-3">
+          <i class="bi bi-envelope-fill me-2"></i>Reach Out Today
+        </a>
+      </div>
+      <div class="col-lg-7" data-anim="fade-left">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="why-card" data-delay="0">
+              <div class="why-icon bg-gold"><i class="bi bi-emoji-smile-fill"></i></div>
+              <h5>Friendly Environment</h5>
+              <p>A welcoming space designed to help you focus and thrive.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="why-card" data-delay="100">
+              <div class="why-icon bg-navy"><i class="bi bi-lightning-charge-fill"></i></div>
+              <h5>Reliable &amp; Fast</h5>
+              <p>Every service delivered with speed and consistency you can count on.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="why-card" data-delay="200">
+              <div class="why-icon bg-purple"><i class="bi bi-cash-coin"></i></div>
+              <h5>Affordable Prices</h5>
+              <p>Premium quality at student-friendly rates — no hidden charges.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="why-card" data-delay="300">
+              <div class="why-icon bg-gold"><i class="bi bi-patch-check-fill"></i></div>
+              <h5>100% Satisfaction</h5>
+              <p>Your satisfaction is guaranteed on every service, every time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     CONTACT
+═══════════════════════════════ -->
+<section class="uth-section bg-navy" id="contact">
+  <div class="container">
+    <div class="row align-items-stretch gy-5">
+      <div class="col-lg-5 d-flex flex-column justify-content-center" data-anim="fade-right">
+        <span class="uth-eyebrow"><i class="bi bi-send-fill me-2"></i>Get in Touch</span>
+        <h2 class="uth-section-title text-white mt-2">Let's Talk.</h2>
+        <div class="title-line"></div>
+        <p class="text-white-50 mt-4 lh-lg">Whether you need a printout, academic research support, or want to enrol in a tech course — we're right here for you.</p>
+        <div class="contact-badges mt-4 d-flex flex-wrap gap-2">
+          <span class="cbadge"><i class="bi bi-emoji-smile me-1"></i>Friendly</span>
+          <span class="cbadge"><i class="bi bi-lightning-charge me-1"></i>Fast</span>
+          <span class="cbadge"><i class="bi bi-cash me-1"></i>Affordable</span>
+          <span class="cbadge"><i class="bi bi-shield-check me-1"></i>Guaranteed</span>
+        </div>
+      </div>
+      <div class="col-lg-7" data-anim="fade-left">
+        <div class="contact-card">
+
+          <a href="tel:08109689809" class="contact-row">
+            <div class="crow-icon bg-gold">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="crow-text">
+              <span class="crow-label">Call Us Directly</span>
+              <span class="crow-value">08109689809</span>
+            </div>
+            <i class="bi bi-arrow-right crow-arrow"></i>
+          </a>
+
+          <a href="mailto:unitytechacademy@gmail.com" class="contact-row">
+            <div class="crow-icon bg-navy">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="crow-text">
+              <span class="crow-label">Email Us</span>
+              <span class="crow-value">unitytechacademy@gmail.com</span>
+            </div>
+            <i class="bi bi-arrow-right crow-arrow"></i>
+          </a>
+
+          <a href="https://maps.google.com/?q=University+Road+Tanke+Ilorin" target="_blank" class="contact-row border-0">
+            <div class="crow-icon bg-purple">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="crow-text">
+              <span class="crow-label">Visit Our Hub</span>
+              <span class="crow-value">University Road, Opposite Bekind Filling Station, Tanke, Ilorin.</span>
+            </div>
+            <i class="bi bi-arrow-right crow-arrow"></i>
+          </a>
+
+          <!-- Map embed placeholder -->
+          <div class="map-preview">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="Location map view"/>
+            <div class="map-pin">
+              <i class="bi bi-geo-alt-fill text-gold"></i>
+              <span>Tanke, Ilorin</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
+<footer class="uth-footer">
+  <div class="container">
+    <div class="row gy-4 align-items-start">
+      <div class="col-lg-4">
+        <div class="uth-brand mb-2">
+          <span class="brand-unity">UNITY</span><span class="brand-tech"> TECH HUB</span>
+        </div>
+        <p class="text-white-50 small">Empowering Learning, Enhancing Futures.</p>
+        <p class="text-white-50 small mt-1">
+          <i class="bi bi-geo-alt me-1 text-gold"></i>University Road, Tanke, Ilorin.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-center">
+        <h6 class="text-gold text-uppercase small fw-bold letter-spacing-2 mb-3">Quick Links</h6>
+        <div class="d-flex flex-column gap-2">
+          <a href="#services" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Services</a>
+          <a href="#courses" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Courses</a>
+          <a href="#gallery" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Gallery</a>
+          <a href="#why" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Why Us</a>
+          <a href="#contact" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <h6 class="text-gold text-uppercase small fw-bold letter-spacing-2 mb-3">Contact</h6>
+        <p class="text-white-50 small mb-1"><i class="bi bi-telephone me-2 text-gold"></i>08109689809</p>
+        <p class="text-white-50 small"><i class="bi bi-envelope me-2 text-gold"></i>unitytechacademy@gmail.com</p>
+      </div>
+    </div>
+    <hr class="border-gold-dim mt-4"/>
+    <p class="text-center text-white-50 small py-3 mb-0">
+      &copy; 2025 Unity Tech Hub. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════
+     FLOATING WHATSAPP BUTTON
+═══════════════════════════════ -->
+<a class="wa-fab" id="waFab"
+   href="https://wa.me/2348109689809?text=Hello%20Unity%20Tech%20Hub%2C%20I%27d%20like%20to%20enquire%20about%20your%20services."
+   target="_blank" rel="noopener" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span class="wa-pulse"></span>
+</a>
+
+
+<!-- ═══════════════════════════════
+     AI CHATBOT WIDGET
+═══════════════════════════════ -->
+<div class="chatbot-wrap" id="chatbotWrap">
+
+  <!-- Toggle button -->
+  <button class="chat-toggle-btn" id="chatToggle" title="Chat with us">
+    <i class="bi bi-chat-dots-fill" id="chatIcon"></i>
+    <i class="bi bi-x-lg d-none" id="chatClose"></i>
+    <span class="chat-notif" id="chatNotif">1</span>
+  </button>
+
+  <!-- Chat panel -->
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <div class="chat-header-avatar">
+        <i class="bi bi-robot"></i>
+      </div>
+      <div class="chat-header-info">
+        <strong>Unity AI Assistant</strong>
+        <span><span class="chat-dot"></span> Online now</span>
+      </div>
+      <button class="chat-header-min" id="chatMin"><i class="bi bi-dash-lg"></i></button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <!-- Intro bubble -->
+      <div class="chat-msg bot">
+        <div class="msg-bubble">
+          👋 Hi there! I'm the Unity Tech Hub assistant. Ask me anything — our services, courses, prices, or how to enrol.<br/><br/>I'll also connect you straight to WhatsApp when you're ready!
+        </div>
+        <span class="msg-time">Now</span>
+      </div>
+      <!-- Quick replies -->
+      <div class="chat-quick-replies" id="quickReplies">
+        <button class="qr-btn" data-msg="What services do you offer?">Our Services</button>
+        <button class="qr-btn" data-msg="What tech courses are available?">Tech Courses</button>
+        <button class="qr-btn" data-msg="Where are you located?">Location</button>
+        <button class="qr-btn" data-msg="How do I enrol?">How to Enrol</button>
+      </div>
+    </div>
+
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="Type your message…" autocomplete="off"/>
+      <button id="chatSend"><i class="bi bi-send-fill"></i></button>
+    </div>
+
+    <!-- WhatsApp handoff bar -->
+    <div class="chat-wa-bar">
+      <i class="bi bi-whatsapp text-success me-2"></i>
+      <span>Continue on WhatsApp</span>
+      <a class="chat-wa-btn" id="chatWaBtn"
+         href="https://wa.me/2348109689809?text=Hello%20Unity%20Tech%20Hub!" target="_blank">
+        Open Chat <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
